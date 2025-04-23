@@ -15,6 +15,49 @@
 				"kind": "build",
 				"isDefault": true
 			}
+		},
+		{
+			"label": "npm: bump version (patch)",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"version",
+				"patch"
+			],
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "npm: bump version (minor)",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"version",
+				"minor"
+			],
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "npm: bump version (major)",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"version",
+				"major"
+			],
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "vsce: package extension",
+			"type": "shell",
+			"command": "vsce",
+			"args": [
+				"package"
+			],
+			"group": "build",
+			"problemMatcher": []
 		}
 	]
 }

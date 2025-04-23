@@ -4,7 +4,7 @@
   "description": "Enhance your Python development experience with uv - the fast Python package manager. Provides syntax highlighting, package links, command integration, and more.",
   "version": "0.0.2",
   "engines": {
-    "vscode": "^1.70.0"
+    "vscode": "^1.99.0"
   },
   "icon": "logo.png",
   "author": {
@@ -23,41 +23,35 @@
     "Snippets",
     "Other"
   ],
-  "activationEvents": [
-    "onLanguage:pyproject-toml",
-    "onLanguage:python",
-    "onLanguage:uvlock",
-    "onCommand:uv.init",
-    "onCommand:uv.sync",
-    "onCommand:uv.upgrade",
-    "onCommand:uv.cache.clean",
-    "onCommand:uv.removePackage",
-    "onCommand:uv.searchPackage",
-    "onCommand:uv.generateLock",
-    "onCommand:uv.upgradeDependencies",
-    "onCommand:uv.manageVirtualEnv",
-    "onCommand:uv.runScript",
-    "onCommand:uv.addScriptDependency",
-    "onCommand:uv.installPython",
-    "onCommand:uv.pinPython",
-    "onCommand:uv.installTool",
-    "onCommand:uv.runTool",
-    "onCommand:uv.add"
-  ],
+  "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
     "languages": [
       {
         "id": "uvlock",
-        "extensions": [".lock"],
-        "filenames": ["uv.lock"],
-        "aliases": ["UV Lock", "uv.lock"]
+        "extensions": [
+          ".lock"
+        ],
+        "filenames": [
+          "uv.lock"
+        ],
+        "aliases": [
+          "UV Lock",
+          "uv.lock"
+        ]
       },
       {
         "id": "pyproject-toml",
-        "extensions": [".toml"],
-        "filenames": ["pyproject.toml"],
-        "aliases": ["PyProject TOML", "pyproject.toml"]
+        "extensions": [
+          ".toml"
+        ],
+        "filenames": [
+          "pyproject.toml"
+        ],
+        "aliases": [
+          "PyProject TOML",
+          "pyproject.toml"
+        ]
       }
     ],
     "grammars": [
@@ -252,9 +246,11 @@
     "test": "node ./out/test/runTest.js"
   },
   "devDependencies": {
-    "@types/node": "^18.0.0",
-    "@types/vscode": "^1.70.0",
-    "typescript": "^4.7.4",
-    "vscode-test": "^1.6.2"
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^22.14.1",
+    "@types/vscode": "^1.99.1",
+    "mocha": "^11.1.0",
+    "typescript": "^5.8.3",
+    "vscode-test": "^1.6.1"
   }
 }
