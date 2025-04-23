@@ -9,3 +9,6 @@ UV documentation is available at:
 - https://docs.astral.sh/uv/getting-started/
 - https://github.com/astral-sh/uv
 
+For VS Code Extensions also read this: 
+- https://code.visualstudio.com/api/advanced-topics/using-proposed-api
+- https://code.visualstudio.com/api/advanced-topics/tslint-eslint-migration
