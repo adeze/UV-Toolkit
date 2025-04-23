@@ -1,11 +1,32 @@
-.vscode/**
-.vscode-test/**
-src/**
+# Exclude dev and config files
+.vscode/
+.vscode-test/
+src/
+test/
+*.ts
+*.tsbuildinfo
+*.map
+*.log
+*.md
+.eslintrc*
+eslint.config.*
+tsconfig.json
+esbuild.config.js
+.vscodeignore
 .gitignore
-.yarnrc
-vsc-extension-quickstart.md
-**/tsconfig.json
-**/eslint.config.mjs
-**/*.map
-**/*.ts
-**/.vscode-test.*
+npm-debug.log*
+yarn.lock
+package-lock.json
+
+# Exclude node_modules except production dependencies
+node_modules/
+
+# Exclude output not needed for users
+out/
+coverage/
+
+# Include the dist folder (esbuild output)
+!dist/
+
+# Include syntaxes for language support
+!syntaxes/*.tmLanguage.json
